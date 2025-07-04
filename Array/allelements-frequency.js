@@ -22,3 +22,18 @@ for(let i=0;i<arr.length;i++){
          console.log(arr[i],  freq);
     }
 }
+
+or
+
+let arr = [1,2,3,4,5,6,7,8,9,10,2,7];
+let freq = {};
+
+for(let i=0;i<arr.length;i++){
+    if(freq[arr[i]]){
+        freq[arr[i]] += 1;
+    }else{
+        freq[arr[i]] = 1;
+    }
+}
+
+console.log(freq);
